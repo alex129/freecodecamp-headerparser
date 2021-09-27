@@ -39,7 +39,7 @@ router.get('/whoami', (req, res) => {
   const lang = req.lang;
   const software = res.locals.ua;
 
-  res.json({ ip: ip, lang: lang, software: software });
+  res.json({ ipaddress: ip, language: lang, software: software });
 });
 app.use('/api', router);
 
